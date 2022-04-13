@@ -1,0 +1,22 @@
+
+    {
+        "namespace": "com.seb.customerspending",
+        "name": "CustomerBalance",
+        "type": "record",
+        "version": "1",
+        "fields": [
+            {  "name": "id", "type": "string" },
+            {  "name": "amount", "type": "double" },
+            {
+                "name": "source",
+                "type": {
+                    "type": "enum",
+                    "name": "Source",
+                    "symbols": [
+                        "CARD",
+                        "SWISH"
+                    ]
+                }
+            }
+        ]
+     }
